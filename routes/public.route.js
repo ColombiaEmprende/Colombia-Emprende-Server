@@ -53,7 +53,7 @@ router.route("/six-stores").get((req, res) => {
 router.route("/enviar-email").post((req, res, next) => {
   let mail = req.body
   let mailOptions = {
-    from: `${mail.Nombre} - Colombia Emprende`,
+    from: `${mail.Nombre} - Colombia Emprende <info@colombiaemprende>`,
     to: mail.Email,
     subject: mail.Subject,
     text: mail.Msj,
